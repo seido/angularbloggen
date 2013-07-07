@@ -1,0 +1,9 @@
+<div class="categoryPageTop">
+	<h1>{{categoryName}} カテゴリ</h1>
+	<ul>
+		<li ng-repeat="item in list">
+		<a ng-href="/post/{{item.postid}}">{{item.title}}</a>
+		<small class="date">{{item.date}}</small>
+		</li>
+	</ul>
+</div>

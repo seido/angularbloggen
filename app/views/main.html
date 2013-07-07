@@ -1,0 +1,25 @@
+<div class="row-fluid top">
+	<div class="span10">
+		<div class="summary" ng-repeat="item in list | limitTo: 5">
+			<div class="page-header">
+				<h1 class="title"><a href="/post/{{item.postid}}">{{item.title}}</a>
+					<small class="date">{{item.date}}</small></h1>
+			</div>
+			<div class="content" ng-include src="item.url"></div>
+			<div class="category post-footer">
+				<div class="titleDetailBox">
+					<div class="title">categories:</div>
+					<div>
+						<a ng-repeat="cat in item.category" ng-href="/category/{{cat}}">{{cat}}</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="span2">
+		<h1>カテゴリ</h1>
+		<ol class="category">
+			<li ng-repeat="citem in categories"><a ng-href="/category/{{citem.name}}">{{citem.name}}({{citem.count}})</a></li>
+		</ol>
+	</div>
+</div>
