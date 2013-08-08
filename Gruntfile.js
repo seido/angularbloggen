@@ -315,13 +315,15 @@ module.exports = function (grunt) {
 	grunt.registerTask('agpost', 'build post files', function() {
 		var exec = require('child_process').exec;
 
-		var srcdir = grunt.config(this.name).srcdir;
-		var dstdir = grunt.config(this.name).dstdir;
+		var srcdir = '../'+grunt.config(this.name).srcdir;
+		var dstdir = '../'+grunt.config(this.name).dstdir;
 		var urlbase = grunt.config(this.name).urlbase;
 
 		grunt.log.writeln(srcdir, dstdir, urlbase);
 		var done = this.async();
-		exec('ruby postgen.rb "'+srcdir+'" "'+dstdir+'" "'+urlbase+'"', function(err, stdout, stderr) {
+		exec('bundle exec ruby postgen.rb "'+srcdir+'" "'+dstdir+'" "'+urlbase+'"', 
+		{cwd: 'postgen'},
+		function(err, stdout, stderr) {
 			grunt.log.writeln(stderr);
 			done(err===null);
 		});

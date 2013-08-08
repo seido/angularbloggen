@@ -2,7 +2,8 @@
 
 angular.module('anblogApp', ['postServices'])
   .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
-	  $locationProvider.html5Mode(true);
+	  //$locationProvider.html5Mode(true).hashPrefix('!');
+	  $locationProvider.hashPrefix('!');
 	  $routeProvider
 	  .when('/', {
 		  templateUrl: '/views/main.html',

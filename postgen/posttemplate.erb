@@ -1,0 +1,9 @@
+<!DOCTYPE HTML>
+<html lang="ja"><head>
+	<meta charset="UTF-8">
+	<meta name="date" content="<%=Time.parse(DateTime.parse(headers['date']).to_s).iso8601%>">
+	<title><%=headers['title']%></title>
+</head>
+<body>
+<%=html%>
+</body></html>

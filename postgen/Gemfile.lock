@@ -1,0 +1,16 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    coderay (1.0.9)
+    json (1.8.0)
+    redcarpet (2.3.0)
+    ya2yaml (0.31)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  coderay
+  json
+  redcarpet
+  ya2yaml

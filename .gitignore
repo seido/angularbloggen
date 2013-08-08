@@ -1,6 +1,11 @@
-node_modules
+:quunode_modules
 dist
 .tmp
 .sass-cache
 app/components
 app/api
+vendor
+node_modules
+.DS_Store
+.bundle
+app/_escaped_fragment_/

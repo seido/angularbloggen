@@ -5,6 +5,7 @@
 <!--[if gt IE 8]><!--> <html xmlns:ng="http://angularjs.org" id="ng-app" class="no-js" ng-app="anblogApp" > <!--<![endif]-->
   <head>
     <meta charset="utf-8">
+	<meta name="fragment" content="!">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title ng:bind-template="SEIDO - {{pageTitle}}"></title>
     <meta name="description" content="">
@@ -16,6 +17,13 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript">
+		if(window.location.href.indexOf('?_escaped_fragment_=')!=-1) {
+			var newurl=window.location.href.replace('?_escaped_fragment_=','_escaped_fragment_');
+			newurl = newurl.replace(/\/$/, '.html');
+			window.location.replace(newurl);
+		}
+	</script>
   </head>
   <body >
     <!--[if lt IE 7]>

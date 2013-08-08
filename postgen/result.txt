@@ -1,0 +1,6 @@
+<!DOCTYPE HTML><html lang="ja"><head><meta charset="UTF-8"><title>日本語</title><body>
+<h1>abc</h1>
+
+<h2>efg</h2>
+
+</body></html>
