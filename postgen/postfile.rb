@@ -59,7 +59,9 @@ class PostFile
 	def writeTo(filepath)
 		$KCODE='utf8'
 		open(filepath, "w"){|f|
-			f.write @headers.ya2yaml
+			f.write @headers.ya2yaml(
+				:hash_order => ["title", "date", "category"]
+			)
 			f.write "---\n"
 			f.write @markdown
 		}
