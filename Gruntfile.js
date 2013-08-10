@@ -263,7 +263,8 @@ module.exports = function (grunt) {
 						'components/**/*',
 						'images/{,*/}*.{gif,webp}',
 						'api/**/*',
-						'styles/fonts/*'
+						'styles/fonts/*',
+						'escaped-fragment/**/*'
 					]
 				}]
 			}
@@ -321,7 +322,7 @@ module.exports = function (grunt) {
 
 		grunt.log.writeln(srcdir, dstdir, urlbase);
 		var done = this.async();
-		exec('bundle exec ruby postgen.rb "'+srcdir+'" "'+dstdir+'" "'+urlbase+'"', 
+		exec('bundle exec ruby postgen.rb "'+srcdir+'" "'+dstdir+'" "'+urlbase+'"',
 		{cwd: 'postgen'},
 		function(err, stdout, stderr) {
 			grunt.log.writeln(stderr);

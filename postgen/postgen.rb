@@ -26,7 +26,7 @@ if !(/\/$/ =~ $apiurl)
 	$apiurl<<'/'
 end
 
-escapehtmldir='../app/_escaped_fragment_/post'
+escapehtmldir='../app/escaped-fragment/post'
 if ARGV.length > 3
 	escapehtmldir=ARGV[3]
 end

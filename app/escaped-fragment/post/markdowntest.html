@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html lang="ja"><head>
+	<meta charset="UTF-8">
+	<meta name="date" content="2013-06-03T22:34:11+09:00">
+	<title>Markdown test</title>
+</head>
+<body>
+<h2>コード</h2>
+
+<p>4つ以上インデントする</p>
+
+<p>[指定例]</p>
+<div class="CodeRay">
+  <div class="code"><pre>    function a() {
+        var i = 0;
+    }
+</pre></div>
+</div>
+
+<p>[表示例]</p>
+<div class="CodeRay">
+  <div class="code"><pre>function a() {
+    var i = 0;
+}
+</pre></div>
+</div>
+
+<p>もしくは```を使用する</p>
+
+<p>[指定例]</p>
+<div class="CodeRay">
+  <div class="code"><pre>```
+hoge
+```
+</pre></div>
+</div>
+
+<p>[表示例]</p>
+<div class="CodeRay">
+  <div class="code"><pre>hoge
+</pre></div>
+</div>
+
+<h2>リスト</h2>
+
+<p>[指定例]</p>
+
+<p><code>*</code>を使う</p>
+<div class="CodeRay">
+  <div class="code"><pre>* hoge
+* fuga
+</pre></div>
+</div>
+
+<p><code>+</code>を使う</p>
+<div class="CodeRay">
+  <div class="code"><pre>+ hoge
++ fuga
+</pre></div>
+</div>
+
+<p><code>-</code>を使う</p>
+<div class="CodeRay">
+  <div class="code"><pre>- hoge
+- fuga
+</pre></div>
+</div>
+
+<p>[表示例]</p>
+
+<ul>
+<li>hoge</li>
+<li>fuga</li>
+</ul>
+
+<h2>数字付きリスト</h2>
+
+<p>[指定例]</p>
+<div class="CodeRay">
+  <div class="code"><pre>1. hoge
+2. fuga
+</pre></div>
+</div>
+
+<p>[表示例]</p>
+
+<ol>
+<li>hoge</li>
+<li>fuga</li>
+</ol>
+
+<h2>ソースコード シンタックス</h2>
+
+<p>[指定例]</p>
+<div class="CodeRay">
+  <div class="code"><pre>```javascript
+var f = function(x,y) {
+return x+y;
+}
+```
+</pre></div>
+</div>
+
+<p>[表示例]</p>
+<div class="CodeRay">
+  <div class="code"><pre><span style="color:#080;font-weight:bold">var</span> <span style="color:#06B;font-weight:bold">f</span> = <span style="color:#080;font-weight:bold">function</span>(x,y) {
+   <span style="color:#080;font-weight:bold">return</span> x+y;
+}
+f(<span style="color:#00D">1</span>,<span style="color:#00D">2</span>)
+</pre></div>
+</div>
+
+</body></html>

@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="ja"><head>
+	<meta charset="UTF-8">
+	<meta name="date" content="2013-06-03T22:41:09+09:00">
+	<title>msiのJScriptカスタムアクションでログを出力する</title>
+</head>
+<body>
+<div class="CodeRay">
+  <div class="code"><pre><span style="color:#080;font-weight:bold">var</span> msiMessageTypeInfo = <span style="color:#02b">0x04000000</span>;
+<span style="color:#080;font-weight:bold">var</span> record = Session.Installer.CreateRecord(<span style="color:#00D">0</span>);
+record.StringData(<span style="color:#00D">0</span>) = message;
+Session.Message(msiMessageTypeInfo, record);
+</pre></div>
+</div>
+
+<p><a href="http://msdn.microsoft.com/ja-jp/library/xc8bz3y5%28v=vs.80%29.aspx?cs-save-lang=1&amp;cs-lang=jscript#code-snippet-3">出典</a></p>
+
+<p>ログ出力するにはmsiexecのオプションを使用する</p>
+<div class="CodeRay">
+  <div class="code"><pre>msiexec /l*v log.log /i Setup.msi
+</pre></div>
+</div>
+
+</body></html>

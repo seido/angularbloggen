@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="ja"><head>
+	<meta charset="UTF-8">
+	<meta name="date" content="2013-06-03T22:30:11+09:00">
+	<title>Facebookテストユーザ作成</title>
+</head>
+<body>
+<div class="CodeRay">
+  <div class="code"><pre>https://graph.facebook.com/{APP_KEY}/accounts/test-users?installed=true&amp;name={USER_NAME}&amp;method=post&amp;permissions=email&amp;access_token={APP_TOKEN}
+</pre></div>
+</div>
+
+<ul>
+<li>{APP_KEY} - Facebookのアプリケーションキー</li>
+<li>{USER_NAME} - 作成するユーザ名</li>
+<li>{APP_TOKEN} - app access token</li>
+</ul>
+
+<p>permissionsは必要に応じて指定する。<a href="https://developers.facebook.com/docs/reference/login/open-graph-permissions/">参考</a></p>
+
+<p><a href="https://developers.facebook.com/docs/test_users/">出典</a></p>
+
+</body></html>

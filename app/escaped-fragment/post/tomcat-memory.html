@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="ja"><head>
+	<meta charset="UTF-8">
+	<meta name="date" content="2013-06-03T22:57:27+09:00">
+	<title>Tomcat7メモリ設定</title>
+</head>
+<body>
+<p>tomcat7.conf内のJAVA_OPTSに次の様に設定</p>
+<div class="CodeRay">
+  <div class="code"><pre>JAVA_OPTS=&quot;-Xms256m -Xmx750m -XX:MaxPermSize=128m&quot;
+</pre></div>
+</div>
+
+<ul>
+<li>Xmsは搭載メモリの1/4程度</li>
+<li>Xmxは搭載メモリの半分程度</li>
+<li>XX:MaxPermSizeは128mもあれば十分？</li>
+</ul>
+
+<p>confフォルダにsetenv.shを作成して次を設定という情報もあったが誤り？</p>
+<div class="CodeRay">
+  <div class="code"><pre>export CATALINA_OPTS=&quot;$CATALINA_OPTS -Xms128m -Xmx256m -XX:MaxPermSize=128m&quot;
+</pre></div>
+</div>
+
+</body></html>

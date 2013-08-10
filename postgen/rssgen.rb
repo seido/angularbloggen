@@ -9,7 +9,7 @@ def generateRss(path, baseurl, title, items, author)
 
 		items.each do |post|
 			maker.items.new_item do |item|
-				item.link = baseurl + "/" + post["url"]
+				item.link = baseurl + "/#!/post/" + post["postid"] + "/"
 				item.title = post["title"]
 				item.updated = post["date"]
 			end
