@@ -1,6 +1,8 @@
----
+--- 
+category: 
+  - linux
+date: "2013-06-03T22:51:13+09:00"
 title: Linuxでログアウト後にもプロセスを残す
-categories: linux
 ---
 
     nohup [command]

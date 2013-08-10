@@ -1,6 +1,9 @@
----
+--- 
+category: 
+  - api
+  - facebook
+date: "2013-06-03T22:30:11+09:00"
 title: Facebookテストユーザ作成
-categories: api facebook
 ---
 
 ```

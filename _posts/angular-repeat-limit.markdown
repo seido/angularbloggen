@@ -1,6 +1,8 @@
----
+--- 
+category: 
+  - angularjs
+date: "2013-06-04T22:54:02+09:00"
 title: ng-repeatでlimitを指定する
-categories: angularjs
 ---
 
 [limitToフィルタ](http://docs-angularjs-org-dev.appspot.com/api/ng.filter:limitTo)を使用すると、配列中の指定の箇所のみループできる。

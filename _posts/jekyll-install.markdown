@@ -1,7 +1,9 @@
----
+--- 
+category: 
+  - jekyll
+date: "2013-06-03T22:43:23+09:00"
 layout: post
-title:  "Install Jekyll!"
-categories: jekyll
+title: "Install Jekyll!"
 ---
 
 ## インストール

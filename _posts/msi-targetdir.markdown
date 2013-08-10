@@ -1,6 +1,9 @@
----
+--- 
+category: 
+  - windows
+  - msi
+date: "2013-06-03T22:47:15+09:00"
 title: msiのカスタムアクションでインストール先ディレクトリのパスを取得する
-categories: windows msi
 ---
 
 ```javascript

@@ -1,6 +1,9 @@
----
+--- 
+category: 
+  - java
+  - maven
+date: "2013-06-03T22:58:20+09:00"
 title: Mavenで依存jarファイルをエクスポートする
-categories: java maven
 ---
 
     mvn dependency:copy-dependencies

@@ -1,6 +1,9 @@
----
+--- 
+category: 
+  - tomcat
+  - java
+date: "2013-06-03T22:57:27+09:00"
 title: Tomcat7メモリ設定
-categories: tomcat java
 ---
 
 tomcat7.conf内のJAVA_OPTSに次の様に設定

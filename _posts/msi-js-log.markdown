@@ -1,6 +1,9 @@
----
+--- 
+category: 
+  - windows
+  - msi
+date: "2013-06-03T22:41:09+09:00"
 title: msiのJScriptカスタムアクションでログを出力する
-categories: windows msi
 ---
 
 ```javascript

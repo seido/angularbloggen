@@ -1,6 +1,8 @@
----
-title: Markdown test
-categories: markdown
+--- 
+category: 
+  - markdown
+date: "2013-06-03T22:34:11+09:00"
+title: "Markdown test"
 ---
 ## コード
 4つ以上インデントする

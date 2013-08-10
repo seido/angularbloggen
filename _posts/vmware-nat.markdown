@@ -1,6 +1,8 @@
----
-title: VNWare Player で NATの詳細設定
-categories: vmware
+--- 
+category: 
+  - vmware
+date: "2013-06-03T22:52:23+09:00"
+title: "VNWare Player で NATの詳細設定"
 ---
 
 VMWare Playerのインストール先で次のコマンドを実行する

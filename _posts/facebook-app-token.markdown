@@ -1,6 +1,9 @@
----
-title: Facebook app access token作成
-categories: api facebook
+--- 
+category: 
+  - api
+  - facebook
+date: "2013-06-03T22:36:34+09:00"
+title: "Facebook app access token作成"
 ---
 
 ```
