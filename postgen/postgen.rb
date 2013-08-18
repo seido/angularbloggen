@@ -17,6 +17,7 @@ if ARGV.length > 1
 	destDirPath=ARGV[1]
 end
 $absoluteDestDir = File.expand_path(destDirPath)
+FileUtils.mkdir_p($absoluteDestDir)
 
 $apiurl="/api/"
 if ARGV.length > 2
